@@ -9,7 +9,7 @@ catch() {
 }
 
 if [[ -z ${MK8S_INSTALL+x} ]]       ; then export MK8S_INSTALL='false'      ; fi                        ; echo "mk8s install: $MK8S_INSTALL"
-if [[ -z ${MK8S_VERSION+x} ]]       ; then export MK8S_VERSION='1.19'       ; fi                        ; echo "mk8s version: $MK8S_VERSION"
+if [[ -z ${MK8S_VERSION+x} ]]       ; then export MK8S_VERSION='latest/edge'       ; fi                        ; echo "mk8s version: $MK8S_VERSION"
 if [[ -z ${MK8S_KUBE_DIR+x} ]]      ; then export MK8S_KUBE_DIR='/.kube'    ; fi                        ; echo "mk8s kube dir: $MK8S_KUBE_DIR"
 
 if [[ -z ${KUBE_BENCH_DEPLOY+x} ]]  ; then export KUBE_BENCH_DEPLOY='true'  ; fi                        ; echo "kube-bench deploy: $KUBE_BENCH_DEPLOY"
